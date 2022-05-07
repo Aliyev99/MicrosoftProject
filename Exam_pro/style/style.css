@@ -1,0 +1,1098 @@
+body{
+    height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 55px;
+    margin: 0 auto;
+    position: relative;
+}
+.navList1, .navList2{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.m-navItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 13px;
+}
+
+.logo{
+    height: 23px;
+    margin-bottom: 3px;
+    margin-right: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.searchIcon{
+    font-size: 20px;
+}
+
+.signIconDiv{
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin-left: 5px;
+    padding: 5px 3px;
+}
+.signIconDiv::after{
+    content: "\f234";
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #C1C1C1;
+    font-size: 20px;
+    
+}
+
+nav li a:hover{
+    text-decoration: 2px solid underline;
+    color: black;
+}
+
+
+
+.m-dropDownButton::after{
+    content: "";
+    height: 7px;
+    width: 7px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: rotate(45deg);
+    margin: 4px;
+}
+
+
+.navIcon{
+    color: grey;
+    
+}
+
+
+#m-dropDown{
+    width: 90vw;
+    background-color: #F2F2F2;
+    position: absolute;
+    z-index: 1;
+    left: 2vw;
+    top: 55px;
+    border: 1px solid #E6E6E6;;
+}
+
+#m-dropDown > div{
+    display: flex;
+}
+
+
+.m-dropDownList{
+    list-style-type: none;
+}
+
+.m-dropDownList li{
+    padding: 10px;
+}
+
+.m-dropDownList li:nth-child(1){
+    font-weight: 500;
+}
+
+.m-makeGrey{
+    background-color: rgb(242, 242, 242);
+}
+
+.clickedDropdown{
+    background-color: #F2F2F2;
+    border: 2px dashed black;
+}
+.m-hidden{
+    display: none;
+}
+
+
+
+#m-dropDown div:nth-child(2){
+    background-color: #E6E6E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 50px;
+    border-bottom: 2px solid black;
+}
+
+
+
+/* Advertise */
+main{
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.advertiseDiv{
+    background-color: #0067B8;
+}
+
+.advertiseDiv a{
+    text-decoration: none;
+    font-size: 13px;
+}
+.advertiseDiv a:hover{
+    text-decoration: underline;
+}
+
+
+/* First Carousel */
+.m-carousel{
+    height: auto;
+    position: relative;
+    
+    
+}
+
+.m-carousel1 .slide1{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.m-carousel1 .slide1 img{
+    position: relative;
+    width: 100%;
+}
+
+.m-carousel1 .slide2{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.m-carousel1 .slide2 img{
+    position: relative;
+    width: 100%;
+}
+
+
+
+
+.slideImg{
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.springSale{
+    background-color: #9BF00B;
+    padding: 5px;
+    text-align: center;
+    font-weight: 600;
+    width: 100px;
+}
+
+.neigbourButtonsDiv{
+    display: flex;
+}
+.shopNowBtn{
+    background-color: black;
+    color: white;
+    width: 140px;
+    height: 40px;
+    padding: 10px;
+
+}
+.shopNowBtn > p{
+    margin: 0;
+    margin-left: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.shopNowBtn:hover > p{
+    margin-left: 12px;
+    text-decoration: underline 2px solid white;
+}
+.shopNowBtn:hover > .arrowIcon{
+    margin-left: 18px;
+}
+
+.arrowIcon{
+    height: 10px;
+    width: 10px;
+    border-right: 2px solid white;
+    border-top: 2px solid white;
+    transform: rotate(45deg);
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.bookAnAppoin{
+
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.darkArrowIcon{
+    height: 10px;
+    width: 10px;
+    border-right: 2px solid grey;
+    border-top: 2px solid rgb(112, 110, 110);
+    transform: rotate(45deg);
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.bookAnAppoin > p{
+
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.bookAnAppoin:hover > p{
+    text-decoration: underline 2px solid black;
+}
+.bookAnAppoin:hover > .darkArrowIcon{
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+/* Carousel elements */
+.prevSlideBtn{
+    border: 1px solid #dbdbdb;
+    display: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+    bottom: 47%;
+    background-color: white;
+   
+}
+
+.prevSlideBtnIcon{
+    height: 12px;
+    width: 12px;
+    border-left: 1px solid rgb(75, 71, 71);
+    border-bottom: 1px solid rgb(75, 71, 71);
+    transform: rotate(45deg);
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+.nextSlideBtn{
+    border: 1px solid #dbdbdb;
+    display: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    bottom: 47%;
+    background-color: white;
+}
+.nextSlideBtnIcon{
+    height: 12px;
+    width: 12px;
+    border-top: 1px solid rgb(75, 71, 71);
+    border-right: 1px solid rgb(75, 71, 71);
+    transform: rotate(45deg);
+    margin-right: 5px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.prevSlideBtn:hover, .nextSlideBtn:hover{
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+}
+
+.m-carousel:hover > .nextSlideBtn, .m-carousel:hover > .prevSlideBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dotsDiv{
+    display: flex;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    left: 47%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dot{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dotInside{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid black;
+    
+}
+
+.stopSlideBtn{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.stopSlideBtn:hover{
+    background-color: black;
+}
+.pauseIcon{
+    width: 8px;
+    height: 12px;
+    border-right: 2px solid grey;
+    border-left: 2px solid grey;
+}
+
+.playIcon{
+    color: grey;
+    font-size: 20px;
+    display: none;
+}
+
+.stopSlideBtn:hover > .pauseIcon{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.stopSlideBtn:hover > .playIcon{
+    color: white;
+}
+
+.playPauseBtnLabel{
+    padding: 5px;
+    border: 1px solid grey;
+    font-size: 13px;
+    margin-bottom: 5px;
+    position: absolute;
+    right: -90px;
+    display: none;
+    background-color: transparent;
+}
+
+.stopSlideBtn:hover > .playPauseBtnLabel{
+    display: block;
+}
+
+
+/* 6 Icons with link */
+.iconsContainer{
+    height: 70px;
+    margin: 60px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.linkIconsDivContainer{
+
+    height: 70px;
+
+    width: 1190px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+}
+
+.movedToRight{
+    right: 0;
+}
+
+
+
+.linkIconsDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.iconsLink{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+.linkIconsMoveToRightBtn{
+    border: 1px solid #dbdbdb;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    opacity: 0.8;
+    background-color: white;
+    display: none;
+}
+
+.linkIconsMoveToLeftBtn{
+    border: 1px solid #dbdbdb;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    opacity: 0.8;
+    background-color: white;
+    display: none;
+}
+.linkIconsMoveToRightBtn:hover, .linkIconsMoveToLeftBtn:hover{
+    opacity: 1;
+}
+
+
+/* Under icons Cards */
+.m-card{
+    border: 0;
+}
+
+.cardLink{
+
+        height: 40px;
+        padding: 10px;
+        padding-left: 0;
+
+}
+
+.blueArrowIcon{
+    height: 10px;
+    width: 10px;
+    border-right: 2px solid #0067B8;
+    border-top: 2px solid #0067B8;
+    transform: rotate(45deg);
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.cardLink > p{
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.cardLink:hover > p{
+    text-decoration: underline 2px solid #0067B8;
+}
+.cardLink:hover > .blueArrowIcon{
+    margin-left: 15px;
+}
+
+
+
+
+/* Games container */
+
+.gamesContainer{
+    height: auto;
+    position: relative;
+}
+
+
+.gamesContainerCard{
+    position: absolute;
+    bottom: 20%;
+    left: 60px;
+    width: 470px;
+    height: 200px;
+    color: white;
+}
+.gamesContainer img{
+    width: 100%;
+}
+
+.m-carousel2 .slide1{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.m-carousel2 .slide1 img{
+    width: 100%;
+}
+.m-carousel2 .slide2{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.m-carousel2 .slide2 img{
+    width: 100%;
+}
+
+
+.leftSliderCard{
+    position: absolute;
+    bottom: 30%;
+    left: 80px;
+    width: 465px;
+    height: 200px;
+    font-size: 15px;
+}
+
+.rightSiderCard{
+    position: absolute;
+    bottom: 30%;
+    right: 20px;
+    width: 470px;
+    height: 200px;
+    font-size: 15px;
+}
+
+.m-carousel2  .leftSliderCard{
+    bottom: 20%;
+    left: 60px;
+    color: white;
+}
+.m-carousel2 .prevSlideBtn, .m-carousel2 .nextSlideBtn{
+    border: 0;
+    opacity: .8;
+    background: #2e2e2e;
+    color: #ccc;
+    border: 1px solid transparent;
+}
+.m-carousel2 .prevSlideBtn:hover, .m-carousel2 .nextSlideBtn:hover{
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%)
+}
+.m-carousel2 .nextSlideBtnIcon{
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.m-carousel2 .prevSlideBtnIcon{
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.m-carousel2  .rightSiderCard{
+    width: 470px;
+    bottom: 20%;
+    right: 50px;
+}
+.m-carousel2 .shopNowBtn{
+    width: 155px;
+}
+
+
+
+.m-carousel2 .dotInside{
+
+    border: 1px solid white;
+    
+}
+
+.m-carousel2 .stopSlideBtn:hover{
+    background-color: white;
+}
+.m-carousel2 .pauseIcon{
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+}
+
+.m-carousel2 .playIcon{
+    color: white;
+}
+
+.stopSlideBtn:hover > .pauseIcon{
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+}
+
+.stopSlideBtn:hover > .playIcon{
+    color: grey;
+}
+
+.playPauseBtnLabel{
+    padding: 5px;
+    border: 1px solid grey;
+    font-size: 13px;
+    margin-bottom: 5px;
+    position: absolute;
+    right: -90px;
+    display: none;
+    background-color: #F3F3F3;
+}
+
+.m-carousel2 .stopSlideBtn:hover > .playPauseBtnLabel{
+    display: block;
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+.socilIconsContainer{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+          
+
+/* FOOTER */
+footer{
+    height: auto;
+    width: 100%;
+    background-color: #F2F2F2;
+    padding: 0 5%;
+    padding-top: 50px;
+}
+
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    padding: 5px;
+    padding-left: 0;
+}
+
+.footerGrid{
+    row-gap: 30px;
+}
+footer ul li h4{
+    font-size: 15px
+}
+
+footer a{
+    color: grey;
+    font-size: 11px;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: 1px solid underline black;
+    color: grey;
+}
+
+.lastContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.footerLastList{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.footerLastList li{
+    padding: 10px;
+    padding-bottom: 0;
+}
+.languageSelect{
+    display: flex;
+    align-items: center;
+}
+
+.languageSelect .globeIcon{
+    color: grey;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+
+/* Gamburger */
+.gamburgerWithSearch{
+    display: none;
+    align-items: center;
+    height: 100%;
+    padding: 5px;
+}
+
+#gamburger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 40px;
+    margin-right: 10px;
+    padding: 12px;
+}
+.gamburgerLine{
+    height: 1px;
+    width: 20px;
+    background-color: black;
+}
+
+.gamburgerLine1_Change{
+    transform: rotate(45deg) translate(6px, 3px);
+}
+.gamburgerLine2_Change{
+    display: none;
+}
+.gamburgerLine3_Change{
+    transform: rotate(-45deg) translate(3px, 0px)
+}
+
+.menuList{
+    list-style-type: none;
+    background-color: #F2F2F2;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -717px;
+    z-index: 2;
+    display: none;
+    border-bottom: 1px solid black;
+    padding: 0;
+}
+.menuList li{
+    width: 100%;
+    height: 50px;
+    
+    /* padding: 15px 10px; */
+    border-top: 1px solid #dfdcdc;
+    
+}
+.menuList li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.menuList li a:hover{
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 1190px){
+    .m-state{
+        display: block;
+    }
+    .movedToLeft{
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    nav{
+        width: 100%;
+    }
+    
+
+    main{
+        width: 100%;
+    }
+
+
+    .myContainer{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .gamesContainer img{
+        content: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4RBHW?ver=a523&q=0&m=8&h=609&w=1083&b=%23FFFFFFFF&l=f&x=0&y=735&s=1094&d=615&aim=true);
+    }
+    .gamesContainerCard{
+        width: 300px;
+    }
+    .m-carousel1 .slide2 img{
+        content: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWPvN9?ver=5d63&q=0&m=6&h=609&w=1083&b=%23FFFFFFFF&l=f&o=t&aim=true);
+    }
+    
+    .m-carousel1 .slide1 img{
+        content: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4Q8e6?ver=e2b9&q=0&m=8&h=609&w=1083&b=%23FFFFFFFF&l=f&x=402&y=152&s=2367&d=1331&aim=true);
+    }
+
+    .m-carousel2 .slide2 img{
+        content: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4Ukqx?ver=567f&q=0&m=8&h=609&w=1083&b=%23FFFFFFFF&l=f&x=0&y=735&s=1094&d=615&aim=true);
+    }
+    
+    .m-carousel2 .slide1 img{
+        content: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4Pddp?ver=31f2&q=0&m=8&h=609&w=1083&b=%23FFFFFFFF&l=f&x=0&y=739&s=1087&d=611&aim=true);
+    }
+    
+    .leftSliderCard{
+        width: 300px;
+    }
+
+    .m-carousel2  .leftSliderCard{
+        bottom: 30%;
+        left: 60px;
+    }
+
+    .rightSiderCard{
+        width: 350px;
+    }
+    .m-carousel2  .rightSiderCard{
+        width: 470px;
+        bottom: 20%;
+        right: 50px;
+    }
+    .neigbourButtonsDiv{
+        flex-direction: column;
+    }
+    .bookAnAppoin{
+        margin-left: 0;
+        padding-left: 5px;
+    }
+
+    .lastContainer{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .footerLastList{
+        padding-left: 0;
+    }
+    .footerLastList li{
+        padding-left: 0;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .navList1 .m-navItem:nth-child(7), .navList1 .m-navItem:nth-child(8){
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width: 860px){
+    .navList1 .m-navItem{
+        display: none;
+    }
+    .navList1 .m-navItem:nth-child(1){
+        display: block;
+    }
+    .navList2 .m-navItem:nth-child(1), .navList2 .m-navItem:nth-child(2){
+        display: none;
+    }
+    .navList1{
+        margin: 0 auto;
+    }
+    .gamburgerWithSearch{
+        display: flex;
+    }
+    .active{
+        display: block;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px){
+    .m-carousel1 .slide2 img{
+        content: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWPvN9?ver=5d63&q=0&m=8&h=431&w=767&b=%23FFFFFFFF&l=f&x=1393&y=417&s=1604&d=901&aim=true);
+    }
+    
+    .m-carousel1 .slide1 img{
+        content: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4Q8e6?ver=e2b9&q=0&m=8&h=431&w=767&b=%23FFFFFFFF&l=f&x=233&y=415&s=1533&d=862&aim=true);
+    }
+
+    .m-carousel2 .slide2 img{
+        content: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4Ukqx?ver=567f&q=0&m=8&h=431&w=767&b=%23FFFFFFFF&l=f&x=1123&y=915&s=775&d=435&aim=true)
+    }
+    
+    .m-carousel2 .slide1 img{
+        content: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4Pddp?ver=31f2&q=0&m=8&h=431&w=767&b=%23FFFFFFFF&l=f&x=1131&y=919&s=767&d=431&aim=true);
+    }
+
+    .gamesContainer img{
+        content: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4RBHW?ver=a523&q=0&m=8&h=431&w=767&b=%23FFFFFFFF&l=f&x=1131&y=919&s=767&d=431&aim=true);
+    }
+
+
+   
+    .slide{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .leftSliderCard{
+        position: relative;
+        bottom: 0;
+        left: 0px;
+        width: 100%;
+        height: 350px;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #E6E6E6;
+        padding: 0 20px;
+    }
+    .m-carousel2  .leftSliderCard{
+        background-color: #333333;
+        left: 0;
+    }
+    .leftSliderCard p{
+        text-align: center;
+        
+    }
+    .rightSiderCard{
+        position: relative;
+        right: 0;
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #E6E6E6;
+        padding: 0 20px;
+    }
+
+
+    .neigbourButtonsDiv{
+        flex-direction: row;
+    }
+    .bookAnAppoin{
+        width: 210px;
+    }
+    .m-carousel2 .bookAnAppoin{
+        width: 170px;
+    }
+
+
+    .gamesContainer{
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    
+    .gamesContainerCard{
+        position: relative;
+
+        left: 0;
+        width: 100%;
+        height: 350px;
+        color: white;
+        background-color: #333333;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+    .gamesContainerCard p{
+        text-align: center;
+    }
+
+    .gamesContainerCard .bookAnAppoin{
+        width: 220px;
+    }
+
+    .prevSlideBtn{
+        /* top: 0; */
+        bottom: 350px;
+    }
+
+    .nextSlideBtn{
+        /* top: 0; */
+        bottom: 350px;
+    }
+
+
+
+
+    .iconsContainer{
+        height: 350px;
+        margin: 60px 0;
+        position: relative;
+    }
+    .linkIconsDivContainer{
+    
+        height: 100%;
+    
+        width: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        padding: 30px;
+
+    }
+    .movedToRight{
+        right: 0;
+    }
+    
+    .movedToLeft{
+        left: 0;
+    }
+    
+    .linkIconsDiv{
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        
+    }
+
+    .linkIconsDiv img{
+        width: 25px;
+        margin-right: 10px;
+    }
+    .iconsLink{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .newLine{
+        display: none;
+    }
+    
+    #linksNextBtn{
+        display: none;
+    }
+    
+    #linksPrevBtn{
+        display: none;
+    }
+    #linksNextBtn:hover, #linksPrevBtn:hover{
+        opacity: 1;
+    }
+}
+
+

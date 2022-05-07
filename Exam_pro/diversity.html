@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/diversityStyle.css">
+</head>
+<body>
+    
+
+    <nav>
+        <div class="gamburgerWithSearch">
+            <div id="gamburger" role="button">
+               <span class="gamburgerLine"></span>
+               <span class="gamburgerLine"></span>
+               <span class="gamburgerLine"></span>
+            </div>
+            
+            <a href=""><i class="fa fa-search navIcon" aria-hidden="true"></i></a>
+        </div>
+        <ul class="menuList">
+            <li><a href=""> Microssoft 365</a></li>
+            <li><a href=""> Office</a></li>
+            <li><a href=""> Windows</a></li>
+            <li><a href=""> Surface</a></li>
+            <li><a href=""> XBox</a></li>
+            <li><a href=""> Deals</a></li>
+            <li><a href=""> Support</a></li>
+            <li><a href=""> Software</a></li>
+            <li><a href=""> Pcs & Devices</a></li>
+            <li><a href=""> Entertaiment</a></li>
+            <li><a href=""> Business</a></li>
+            <li><a href=""> Developer & It</a></li>
+            <li><a href=""> Other</a></li>
+            <li><a href=""> View Sitemap</a></li>
+        </ul>
+
+        <ul class="navList1">
+            <li class="m-navItem">
+                <a href="./index.html">
+                    <img class="logo" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="">
+                </a>
+            </li>
+            <li class="navAboutLineItem">
+                <div class="navAboutLine"></div>
+            </li>
+            <li class="m-navItem">
+                <a style="font-size: 17px; font-weight: 600;" class="m-navbarLink" href="">Global Diversity and Inclusion</a>
+            </li class="m-navItem">
+
+            <li class="m-navItem">
+                <a class="m-navbarLink" href="">Inside Microsoft</a>
+            </li class="m-navItem">
+            
+            <li class="m-navItem">
+                <a class="m-navbarLink" href="">Beyond Microsoft</a>
+            </li class="m-navItem">
+
+            <li class="m-navItem">
+                <a class="m-navbarLink" href="">Annual D&I Report</a>
+            </li class="m-navItem">
+        </ul>
+
+        <ul class="navList2">
+            <li class="m-navItem" onclick="allWindowsDropedDown(event)">
+                    <a class="m-navbarLink m-dropDownButton" href="">All Windows</a>
+
+                    <!-- Dropdown div-->
+                    <div class="m-hidden" id="m-dropDown">
+                        <div>
+                            <ul class="m-dropDownList">
+                                <li><a href="">Software</a></li>
+                                <li><a href="">Windows Apps</a></li>
+                                <li><a href="">OneDrive</a></li>
+                                <li><a href="">Outlook</a></li>
+                                <li><a href="">Skype</a></li>
+                                <li><a href="">OneNote</a></li>
+                                <li><a href="">Microsoft Edge</a></li>
+                            </ul>
+    
+                            <ul class="m-dropDownList">
+                                <li><a  href="">PCs & Devices</a></li>
+                                <li><a  href="">Computers</a></li>
+                                <li><a  href="">Shop Xbox</a></li>
+                                <li><a  href="">Accessories</a></li>
+                                <li><a  href="">VR & mixed reality</a></li>
+                                <li><a  href="">Phones</a></li>
+                            </ul>
+    
+                            <ul class="m-dropDownList">
+                                <li><a href="">Entertainment</a></li>
+                                <li><a href="">Xbox Game Pass Ultimate</a></li>
+                                <li><a href="">PC Game Pass</a></li>
+                                <li><a href="">Xbox games</a></li>
+                                <li><a href="">PC games</a></li>
+                                <li><a href="">Windows digital games</a></li>
+                                <li><a href="">Movies & TV</a></li>
+                            </ul>
+    
+                            <ul class="m-dropDownList">
+                                <li><a href="">Business</a></li>
+                                <li><a href="">Microsoft Cloud</a></li>
+                                <li><a href="">Microsoft Security</a></li>
+                                <li><a href="">Azure</a></li>
+                                <li><a href="">Dynamics 365</a></li>
+                                <li><a href="">Microsoft 365 for business</a></li>
+                                <li><a href="">Microsoft Industry</a></li>
+                                <li><a href="">Microsoft Power Platform</a></li>
+                                <li><a href="">Windows 365</a></li>
+                            </ul>
+    
+                            <ul class="m-dropDownList">
+                                <li><a href="">Developer & IT</a></li>
+                                <li><a href="">Developer Center</a></li>
+                                <li><a href="">Documentation</a></li>
+                                <li><a href="">Microsoft Learn</a></li>
+                                <li><a href="">Microsoft Tech Community</a></li>
+                                <li><a href="">Azure Marketplace</a></li>
+                                <li><a href="">AppSource</a></li>
+                                <li><a href="">Visual Studio</a></li>
+                            </ul>
+    
+                            <ul class="m-dropDownList">
+                                <li><a href="">Other</a></li>
+                                <li><a href="">Microsoft Rewards</a></li>
+                                <li><a href="">Free downloads & security</a></li>
+                                <li><a href="">Education</a></li>
+                                <li><a href="">Virtual workshops and training</a></li>
+                                <li><a href="">Gift cards</a></li>
+                                <li><a href="">Gift Ideas</a></li>
+                                <li><a href="">Licensing</a></li>
+                                <li><a href="">Microsoft Experience Center</a></li>
+                            </ul>
+                        </div>
+                       <div>
+                           <p class="m-0">VIEW SITEMAP ></p>
+                       </div>
+                    </div>
+
+            </li>
+              
+            <li class="m-navItem">
+                <a href=""><i class="fa fa-search navIcon" aria-hidden="true"></i></a>
+            </li class="m-navItem">
+            <li class="m-navItem">
+                <a href="" style="text-decoration: none;">
+                    <div class="signIconDiv">
+                    
+                    </div>
+                </a>
+                
+            </li>
+        </ul>
+    </nav>
+
+    <div class="storiesList">
+        <a class="m-navbarLink m-dropDownButton" onclick="dropdownBtnClicked(event, 0)" href="">Global Diversity and Inclusion</a>
+
+                <ul class="dropdownList m-hidden">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Location</a></li>
+                    <li><a href="">Professions</a></li>
+                    <li><a href="">Us Military & Veterans</a></li>
+                </ul>
+    </div>
+
+    <main>
+        <div class="m-container">
+            <img class="mainStartImg" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWrH0w?ver=d793&q=90&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=320&y=0&s=2880&d=1080&aim=true"></img>
+            <div class="onImageContext">
+                <h4>Dversity and InClujion</h4>
+                <p>We believe in the transformative power of engaging many different perspectives.</p>
+                <div class="shopNowBtn"><p class="d-inline-block">How we work inside Microsoft</p><div class="d-inline-block arrowIcon"></div></div>
+            </div>
+        </div>
+
+
+        <div class="underMainImageContainer">
+            <div class="row m-0">
+                <div class="col-lg-5 col-md-6 underMainImageContainerContext">
+                    <h3>Different perspectives help us all to achieve more</h3>
+                    <p>Our mission is deeply inclusive: empower every person and every organization on the planet to achieve more. We expect each of us—no matter what our level, role or function is—to play an active role in creating environments where people of a diverse range of backgrounds are excited to bring all of who they are and do their best work.</p>
+                    <a href="" class="cardLink"><p>Shop now</p><div class="blueArrowIcon"></div></a>
+                </div>
+
+                <div class="col-lg-7  col-md-6 underMainImageContainerImgDiv">
+                    <img class="underMainImageContainerImg" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWN4CO?ver=a6c0&q=90&m=8&h=450&w=800&b=%23FFFFFFFF&l=f&x=0&y=0&s=1040&d=585&aim=true" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        
+
+
+        <div class="m-featuresProgramsContainer">
+            <div class="row m-0 ">
+                <div class="col-lg-12  m-featuresProgramsHeader">
+                    <h2>Featured programs and projects</h2>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 m-featuresProgramsCard">
+                    <div class="card m-featuresProgramsCard">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wxuc?ver=d5d5&q=90&m=6&h=291&w=517&b=%23FFFFFFFF&l=f&o=t&x=509&y=133&aim=true" class="card-img-top" alt="...">
+                        <div class="card-body m-featuresProgramsCard_body">
+                          <h5 class="card-title">Connecting place and self</h5>
+                          <p class="card-text mb-2">Adonis’s reverence for the land and determination to keep his culture alive inspires his work developing relationships with local and native peoples.</p>
+                          <a href="" class="cardLink"><p>Adonis’s story </p><div class="blueArrowIcon"></div></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 m-featuresProgramsCard">
+                    <div class="card m-featuresProgramsCard">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wAaj?ver=2c96&q=90&m=6&h=291&w=517&b=%23FFFFFFFF&l=f&o=t&x=104&y=143&aim=true" class="card-img-top" alt="...">
+                        <div class="card-body m-featuresProgramsCard_body">
+                          <h5 class="card-title">Microsoft AI</h5>
+                          <p class="card-text mb-2">When designed with people at the center, AI can extend your capabilities, free you up for more creative and strategic endeavors, and help you and your organization achieve more.</p>
+                          <a href="" class="cardLink"><p>Tareq’s story</p><div class="blueArrowIcon"></div></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12 m-featuresProgramsCard">
+                    <div class="card m-featuresProgramsCard">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wCQn?ver=409e&q=90&m=6&h=291&w=517&b=%23FFFFFFFF&l=f&o=t&aim=true" class="card-img-top" alt="...">
+                        <div class="card-body m-featuresProgramsCard_body">
+                          <h5 class="card-title">Microsoft AI</h5>
+                          <p class="card-text mb-2">When designed with people at the center, AI can extend your capabilities, free you up for more creative and strategic endeavors, and help you and your organization achieve more.</p>
+                          <a href="" class="cardLink"><p>Shy’s story</p><div class="blueArrowIcon"></div></a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12  m-featuresProgramsCard">
+
+
+                    <div class="card m-featuresProgramsCard">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wCQq?ver=4356&q=90&m=6&h=291&w=517&b=%23FFFFFFFF&l=f&o=t&x=422&y=240&aim=true" class="card-img-top" alt="...">
+                        <div class="card-body m-featuresProgramsCard_body">
+                          <h5 class="card-title">Sustainability By the Numbers</h5>
+                          <p class="card-text mb-2">Microsoft will be carbon negative by 2030. Get an interactive look at other ways our company is improving our environmental impact.</p>
+                          <a href="" class="cardLink"><p>Rita’s story</p><div class="blueArrowIcon"></div></a>
+                        </div>
+                      </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 m-featuresProgramsCard">
+                    <div class="card m-featuresProgramsCard">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wuYE?ver=0ca8&q=90&m=6&h=291&w=517&b=%23FFFFFFFF&l=f&o=t&aim=true" class="card-img-top" alt="...">
+                        <div class="card-body m-featuresProgramsCard_body">
+                          <h5 class="card-title">Corporate Social Responsibility</h5>
+                          <p class="card-text mb-2">We believe technology is a powerful force for good and are working to foster a sustainable future where everyone has access to the benefits and opportunities created by technology.</p>
+                          <a href="" class="cardLink"><p>Ashe and Shannan’s story</p><div class="blueArrowIcon"></div></a>
+                        </div>
+                      </div>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 col-sm-12 m-featuresProgramsCard">
+                    <div class="card m-featuresProgramsCard">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wskV?ver=b317&q=90&m=6&h=291&w=517&b=%23FFFFFFFF&l=f&o=t&x=272&y=101&aim=true" class="card-img-top" alt="...">
+                        <div class="card-body m-featuresProgramsCard_body">
+                          <h5 class="card-title">Stories</h5>
+                          <p class="card-text mb-2">At Microsoft, we're inspired by people around the world who use technology to do imaginative, innovative, and life-changing things. We share their stories.</p>
+                          <a href="" class="cardLink"><p>SLauren’s story</p><div class="blueArrowIcon"></div></a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="weRichContainer">
+            <div class="row m-0 weRichContainerDiv">
+                <div class="col-lg-5 col-md-5 weRichContainerContext">
+                    <h3>We reach out with purpose</h3>
+                    <p>Guided by a commitment to building diverse communities, we’re intentional in who we reach out to, and how we connect with them. We increasingly do business with minority- and women-owned companies. We globally invest in developing the next tech industry leaders. And we pursue candidates of diverse backgrounds to help us do our best work yet.</p>
+                    <a href="" class="cardLink"><p>Partnering to advance diversity</p><div class="blueArrowIcon"></div></a>
+                </div>
+
+                <div class="col-lg-7 col-md-7 weRichContainerImgDiv">
+                    <img class="weRichContainerImg" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWqBK1?ver=069c&q=90&m=8&h=450&w=800&b=%23FFFFFFFF&l=f&x=0&y=0&s=1040&d=585&aim=true" alt="">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="inclusiveThinkingContainer">
+            <div class="row m-0 inclusiveThinkingContainerDiv">
+                <div class="col-lg-7 col-md-7 inclusiveThinkingContainerImgDiv">
+                    <img class="inclusiveThinkingContainerImg" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWqm4i?ver=ab60&q=90&m=8&h=450&w=800&b=%23FFFFFFFF&l=f&x=0&y=0&s=1040&d=585&aim=true" alt="">
+                </div>
+
+                <div class="col-lg-5 col-md-5 inclusiveThinkingContainerContext">
+                    <h3>Inclusive thinking drives our innovation</h3>
+                    <p>We design for all human experiences and needs. So, we strive to gather, listen to, and include as many perspectives as possible, with the goal of discovering how to bring out the best in each other, and everyone who uses what we create.</p>
+                    <a href="" class="cardLink"><p>Our inclusive design principles</p><div class="blueArrowIcon"></div></a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="socilIconsContainer">
+            <div class="socilIconsDiv my-5">
+                <p class="m-0">Follow Microsoft</p>
+                <a href="https://www.facebook.com/Microsoft">
+                    <img src="//www.microsoft.com/onerfstatics/marketingsites-neu-prod/_h/85288795/coreui.statics/images/social/facebook.png" alt="">
+                </a>
+                <a href="https://twitter.com/microsoft">
+                    <img src="https://www.microsoft.com/onerfstatics/marketingsites-neu-prod/_h/93690392/coreui.statics/images/social/twitter.png" alt="">
+                </a>
+                <a href="https://www.linkedin.com/company/microsoft">
+                    <img src="https://www.microsoft.com/onerfstatics/marketingsites-neu-prod/_h/b23f9ba2/coreui.statics/images/social/linkedin.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        
+    </main>
+
+
+    <footer>
+
+        <div class="row m-0 footerGrid">
+            <ul class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <li><a href=""><h4>What's new</h4></a></li>
+                <li><a href="">Surface Pro 8</a></li>
+                <li><a href="">Surface Laptop Studio</a></li>
+                <li><a href="">Surface Pro X</a></li>
+                <li><a href="">Surface Go 3</a></li>
+                <li><a href="">Surface Duo 2</a></li>
+                <li><a href="">Surface Pro 7+</a></li>
+                <li><a href="">Windows 11 apps</a></li>
+                <li><a href="">HoloLens 2</a></li>
+            </ul>
+            <ul class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <li><a href=""><h4>Microsoft Store</h4></a></li>
+                <li><a href="">Account profile</a></li>
+                <li><a href="">Download Center</a></li>
+                <li><a href="">Microsoft Store</a></li>
+                <li><a href="">Returns</a></li>
+                <li><a href="">Order tracking</a></li>
+                <li><a href="">Virtual workshops</a></li>
+                <li><a href="">Microsoft Store Promise</a></li>
+                <li><a href="">Flexible Payments</a></li>
+            </ul>
+            <ul class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <li><a href=""><h4>Education</h4></a></li>
+                <li><a href="">Microsoft in education</a></li>
+                <li><a href="">Devices for education</a></li>
+                <li><a href="">Microsoft Teams for Education</a></li>
+                <li><a href="">Microsoft 365 Education</a></li>
+                <li><a href="">Education consultation appointment</a></li>
+                <li><a href="">Educator training and development</a></li>
+                <li><a href="">Deals for students and parents</a></li>
+                <li><a href="">Azure for students</a></li>
+            </ul>
+            <ul class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <li><a href=""><h4>Business</h4></a></li>
+                <li><a href="">Microsoft Cloud</a></li>
+                <li><a href="">Microsoft Security</a></li>
+                <li><a href="">Azure</a></li>
+                <li><a href="">Dynamics 365</a></li>
+                <li><a href="">Microsoft 365</a></li>
+                <li><a href="">Microsoft Advertising</a></li>
+                <li><a href="">Microsoft Industry</a></li>
+                <li><a href="">Microsoft Teams</a></li>
+            </ul>
+            <ul class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <li><a href=""><h4>Developer & IT</h4></a></li>
+                <li><a href="">Developer Center</a></li>
+                <li><a href="">Documentation</a></li>
+                <li><a href="">Microsoft Learn</a></li>
+                <li><a href="">Microsoft Tech Community</a></li>
+                <li><a href="">Azure Marketplace</a></li>
+                <li><a href="">AppSource</a></li>
+                <li><a href="">Microsoft Power Platform</a></li>
+                <li><a href="">Visual Studio</a></li>
+            </ul>
+            <ul class="col-lg-2 col-md-4 col-sm-4 p-0">
+                <li><a href=""><h4>Company</h4></a></li>
+                <li><a href="./careers.html">Careers</a></li>
+                <li><a href="./aboutUs.html">About Microsoft</a></li>
+                <li><a href="./news.html">Company news</a></li>
+                <li><a href="">Privacy at Microsoft</a></li>
+                <li><a href="">Investors</a></li>
+                <li><a href="#">Diversity and inclusion</a></li>
+                <li><a href="">Accessibility</a></li>
+                <li><a href="">Sustainability</a></li>
+            </ul>
+
+
+
+        <div class="col-12 lastContainer p-0">
+            <div class="languageSelect"><i class="fa fa-globe globeIcon" aria-hidden="true"></i><a href="">English(United States)</a></div>
+            <ul class="footerLastList">
+                        
+                <li><a href="">Sitemap</a></li>
+                <li><a href="">Contact Microsoft</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms of use</a></li>
+                <li><a href="">Trademarks</a></li>
+                <li><a href="">Safety & eco</a></li>
+                <li><a href="">About our ads</a></li>
+                <li><a href="">© Microsoft 2022</a></li>
+            </ul>
+        </div>
+    </div>
+
+   
+</footer>
+   
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> --> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+    <script src="./script/newsScript.js"></script>
+</body>
+</html>

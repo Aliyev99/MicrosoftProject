@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/newsStyle.css">
+</head>
+<body>
+    
+
+    <nav>
+        <div class="gamburgerWithSearch">
+            <div id="gamburger" role="button">
+               <span class="gamburgerLine"></span>
+               <span class="gamburgerLine"></span>
+               <span class="gamburgerLine"></span>
+            </div>
+            
+            <a href=""><i class="fa fa-search navIcon" aria-hidden="true"></i></a>
+        </div>
+        <ul class="menuList">
+           <li><a href=""> Microssoft 365</a></li>
+            <li><a href=""> Office</a></li>
+            <li><a href=""> Windows</a></li>
+            <li><a href=""> Surface</a></li>
+            <li><a href=""> XBox</a></li>
+            <li><a href=""> Deals</a></li>
+            <li><a href=""> Support</a></li>
+            <li><a href=""> Software</a></li>
+            <li><a href=""> Pcs & Devices</a></li>
+            <li><a href=""> Entertaiment</a></li>
+            <li><a href=""> Business</a></li>
+            <li><a href=""> Developer & It</a></li>
+            <li><a href=""> Other</a></li>
+            <li><a href=""> View Sitemap</a></li>
+        </ul>
+
+        <ul class="navList1">
+            <li class="m-navItem">
+                <a href="./index.html">
+
+                    <img class="logo" src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" alt="">
+                </a>
+            </li>
+            <li class="m-navItem">
+                <a class="m-navbarLink m-dropDownButton" onclick="dropdownBtnClicked(event, 0)" href="">Our Company</a>
+
+                            <ul class="dropdownList m-hidden">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Location</a></li>
+                                <li><a href="">Professions</a></li>
+                                <li><a href="">Us Military & Veterans</a></li>
+                            </ul>
+            </li>
+            <li class="m-navItem">
+                <a class="m-navbarLink m-dropDownButton" onclick="dropdownBtnClicked(event, 1)" href="">News and Stories</a>
+
+                            <ul class="dropdownList m-hidden">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Location</a></li>
+                                <li><a href="">Professions</a></li>
+                                <li><a href="">Us Military & Veterans</a></li>
+                            </ul>
+            </li>
+
+            <li class="m-navItem">
+                <a class="m-navbarLink m-dropDownButton" onclick="dropdownBtnClicked(event, 2)" href="">Prees Tools</a>
+
+                <ul class="dropdownList m-hidden">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Location</a></li>
+                    <li><a href="">Professions</a></li>
+                    <li><a href="">Us Military & Veterans</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="navList2">
+            <li class="m-navItem" id="m-allWindwosWropDownBtn"  onclick="allWindowsDropedDown(event)">
+                    <a class="m-navbarLink m-dropDownButton" href="">All Windows</a>
+
+                    <!-- Dropdown div-->
+                    <div class="m-hidden" id="m-dropDown">
+                        <div>
+                            <ul class="m-dropDownList">
+                                <li><a href="">Software</a></li>
+                                <li><a href="">Windows Apps</a></li>
+                                <li><a href="">OneDrive</a></li>
+                                <li><a href="">Outlook</a></li>
+                                <li><a href="">Skype</a></li>
+                                <li><a href="">OneNote</a></li>
+                                <li><a href="">Microsoft Edge</a></li>
+                            </ul>
+    
+                            <ul class="m-dropDownList">
+                                <li><a  href="">PCs & Devices</a></li>
+                                <li><a  href="">Computers</a></li>
+                                <li><a  href="">Shop Xbox</a></li>
+                                <li><a  href="">Accessories</a></li>
+                                <li><a  href="">VR & mixed reality</a></li>
+                                <li><a  href="">Phones</a></li>
+                            </ul>
+    
+                            <ul class="m-dropDownList">
+                                <li><a href="">Entertainment</a></li>
+                                <li><a href="">Xbox Game Pass Ultimate</a></li>
+                                <li><a href="">PC Game Pass</a></li>
+                                <li><a href="">Xbox games</a></li>
+                                <li><a href="">PC games</a></li>
+                                <li><a href="">Windows digital games</a></li>
+                                <li><a href="">Movies & TV</a></li>
+                            </ul>
+    
+                            <ul class="m-dropDownList">
+                                <li><a href="">Business</a></li>
+                                <li><a href="">Microsoft Cloud</a></li>
+                                <li><a href="">Microsoft Security</a></li>
+                                <li><a href="">Azure</a></li>
+                                <li><a href="">Dynamics 365</a></li>
+                                <li><a href="">Microsoft 365 for business</a></li>
+                                <li><a href="">Microsoft Industry</a></li>
+                                <li><a href="">Microsoft Power Platform</a></li>
+                                <li><a href="">Windows 365</a></li>
+                            </ul>
+    
+                            <ul class="m-dropDownList">
+                                <li><a href="">Developer & IT</a></li>
+                                <li><a href="">Developer Center</a></li>
+                                <li><a href="">Documentation</a></li>
+                                <li><a href="">Microsoft Learn</a></li>
+                                <li><a href="">Microsoft Tech Community</a></li>
+                                <li><a href="">Azure Marketplace</a></li>
+                                <li><a href="">AppSource</a></li>
+                                <li><a href="">Visual Studio</a></li>
+                            </ul>
+    
+                            <ul class="m-dropDownList">
+                                <li><a href="">Other</a></li>
+                                <li><a href="">Microsoft Rewards</a></li>
+                                <li><a href="">Free downloads & security</a></li>
+                                <li><a href="">Education</a></li>
+                                <li><a href="">Virtual workshops and training</a></li>
+                                <li><a href="">Gift cards</a></li>
+                                <li><a href="">Gift Ideas</a></li>
+                                <li><a href="">Licensing</a></li>
+                                <li><a href="">Microsoft Experience Center</a></li>
+                            </ul>
+                        </div>
+                       <div>
+                           <p class="m-0">VIEW SITEMAP ></p>
+                       </div>
+                    </div>
+
+            </li>
+              
+            <li class="m-navItem">
+                <a href=""><i class="fa fa-search navIcon" aria-hidden="true"></i></a>
+            </li class="m-navItem">
+            <li class="m-navItem"><a  class="m-navbarLink" href=""><i style="font-size: 20px;" class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+        </ul>
+    </nav>
+    
+    <div class="storiesList">
+        <a class="m-navbarLink m-dropDownButton" onclick="dropdownBtnClicked(event, 3)" href="">Stories</a>
+
+                <ul class="dropdownList m-hidden">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Location</a></li>
+                    <li><a href="">Professions</a></li>
+                    <li><a href="">Us Military & Veterans</a></li>
+                </ul>
+    </div>
+
+
+
+    <div class="newsContainer">
+        <div class="row m-0 newsContainerDiv">
+
+            <div class="col-lg-6 col-md-12 col-sm-12 overflow-hidden p-0 img1Div">
+                <img class="newsContainerImg newsContainerBigImg" src="https://news.microsoft.com/wp-content/uploads/prod/2022/04/Nueva-899x578.jpg" alt="">
+                <div class="onImageDiv">
+                    <a href="">Nueva Pescanova built the world’s first intelligent aquafarm to better feed the fish and the world<div class="d-inline-block arrowIcon"></div></a>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-sm-12 p-0 imgContainer2">
+                <div class="row m-0">
+                    <div class="col-lg-12 col-md-6 col-sm-12 p-0 overflow-hidden img2Div">
+                        <img class="newsContainerImg newsContainerSmallImg" src="https://news.microsoft.com/wp-content/uploads/prod/2022/04/PR_Separates__Natalie-793x446.jpg" alt="">
+                        <div class="onImageDiv">
+                            <a href="">Women’s basketball has a new champion<div class="d-inline-block arrowIcon"></div></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6 col-sm-12 p-0 overflow-hidden img3Div">
+                        <img class="newsContainerImg newsContainerSmallImg" src="https://news.microsoft.com/wp-content/uploads/prod/2022/03/Qlede-793x446.jpg" class="img-fluid|thumbnail rounded-top|rounded-end|rounded-bottom|rounded-start|rounded-circle|" alt="">
+                        <div class="onImageDiv">
+                            <a href="">Azure Quantum demonstrates formerly elusive physics needed to build scalable topological qubits<div class="d-inline-block arrowIcon"></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-12 col-sm-12 p-0 imgContainer3">
+                <div class="row m-0">
+                <div class="col-lg-12 col-md-6 col-sm-12 p-0 overflow-hidden img4Div">
+                    <img class="newsContainerImg newsContainerSmallImg" src="https://news.microsoft.com/wp-content/uploads/prod/2022/03/03-Yakama-Nation-crop-793x446.jpg" alt="">
+                    <div class="onImageDiv">
+                        <a href="">A newspaper shines a light on missing Indigenous women with the help of technology<div class="d-inline-block arrowIcon"></div></a>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-12 p-0 overflow-hidden img5Div">
+                    <img class="newsContainerImg newsContainerSmallImg"  src="https://news.microsoft.com/wp-content/uploads/prod/2022/04/PR_Separates__Charlotte-793x446.jpg" alt="">
+                    <div class="onImageDiv">
+                        <a href="">Windows 11 helps build a more positive, inclusive shopping experience for plus-size women<div class="d-inline-block arrowIcon"></div></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+        <div class="row m-0 centerBigContainer">
+            <div class="col-lg-8 col-md-12 centerContainer_LeftContainer">
+                <div class="row m-0">
+                    <div class="col-lg-6 col-md-6 leftsSideCard">
+                        <div class="card m-card">
+                            <img src="https://news.microsoft.com/wp-content/uploads/prod/2022/03/logoforhero-1-300x169.jpg" class="card-img-top" alt="...">
+                            <div class="card-body ps-0 pe-0">
+                              <a href="#" class="card-link m-cardLink">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
+                            </div>
+
+                            <div class="blackDiv">
+                                <p>Recent news</p>
+                            </div>
+
+                        </div>
+                       
+                            
+                    </div>
+                    <div class="col-lg-6 col-md-6 leftsSideCard">
+                        <div class="card m-card">
+                            <img src="https://news.microsoft.com/wp-content/uploads/prod/2022/03/SD-Lisa-3-960x640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body ps-0 pe-0">
+                              <a href="#" class="card-link m-cardLink">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
+                            </div>
+
+                            <div class="blackDiv">
+                                <p>Recent news</p>
+                            </div>
+
+                        </div>
+                           
+                    </div>
+
+
+
+                    <div class="col-lg-6 col-md-6 leftsSideCard">
+                        <div class="card m-card">
+                            <img src="https://news.microsoft.com/wp-content/uploads/prod/2022/03/Microsoft-Translator-Z-code-hero-full-size-960x640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body ps-0 pe-0">
+                              <a href="#" class="card-link m-cardLink">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
+                            </div>
+                            
+                            <div class="blackDiv">
+                                <p>Recent news</p>
+                            </div>
+                            
+                        </div>
+                       
+                            
+                    </div>
+                    <div class="col-lg-6 col-md-6 leftsSideCard">
+                        <div class="card m-card">
+                            <img src="https://news.microsoft.com/wp-content/uploads/prod/2022/03/A-player-like-me_clean-KV-960x640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body ps-0 pe-0">
+                              <a href="#" class="card-link m-cardLink">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
+                            </div>
+                            
+                            <div class="blackDiv">
+                                <p>Recent news</p>
+                            </div>
+                            
+                        </div>
+                           
+                    </div>
+
+
+
+                    <div class="col-lg-6 col-md-6 leftsSideCard">
+                        <div class="card m-card">
+                            <img src="https://news.microsoft.com/wp-content/uploads/prod/2022/01/JJMDC_Hero-960x640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body ps-0 pe-0">
+                              <a href="#" class="card-link m-cardLink">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
+                            </div>
+                            
+                            <div class="blackDiv">
+                                <p>Recent news</p>
+                            </div>
+                            
+                        </div>
+                       
+                            
+                    </div>
+                    <div class="col-lg-6 col-md-6 leftsSideCard">
+                        <div class="card m-card">
+                            <img src="https://news.microsoft.com/wp-content/uploads/prod/2022/03/Xboxhero-960x640.png" class="card-img-top" alt="...">
+                            <div class="card-body ps-0 pe-0">
+                              <a href="#" class="card-link m-cardLink">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
+                            </div>
+                            
+                            <div class="blackDiv">
+                                <p>Recent news</p>
+                            </div>
+                            
+                        </div>
+                           
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 leftsSideCard">
+                        <div class="card m-card">
+                            <img src="https://news.microsoft.com/wp-content/uploads/prod/2021/11/Young07-960x640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body ps-0 pe-0">
+                              <a href="#" class="card-link m-cardLink">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
+                            </div>
+                            
+                            <div class="blackDiv">
+                                <p>Recent news</p>
+                            </div>
+                            
+                        </div>
+                       
+                            
+                    </div>
+                    <div class="col-lg-6 col-md-6 leftsSideCard">
+                        <div class="card m-card">
+                            <img src="https://news.microsoft.com/wp-content/uploads/prod/2021/12/DirectX-Birds-Eye_2000-960x640.jpg" class="card-img-top" alt="...">
+                            <div class="card-body ps-0 pe-0">
+                              <a href="#" class="card-link m-cardLink">Some quick example text to build on the card title and make up the bulk of the card's content.</a>
+                            </div>
+                            
+                            <div class="blackDiv">
+                                <p>Recent news</p>
+                            </div>
+                            
+                        </div>
+                           
+                    </div>
+                    <button class="col-lg-12 centerCotainerButton">
+                        <p style="display: inline-block; color: white;">VIEW MORE</p>
+                        <div class="d-inline-block arrowIcon"></div>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 centerContainerRightContainer">
+                <div class="presToolsContainer">
+                    <div class="presToolsHeader">
+                        <img src="https://news.microsoft.com/wp-content/themes/microsoft-news-center-2016/images/sidebar-banner-bg.jpg" alt="">
+                        <div class="blackDiv">
+                            <p>Prev tools</p>
+                        </div>
+                    </div>
+                    <div class="presToolsBody">
+                        <ul>
+                            <li><a href="">Executive biographies<div class="d-inline-block darkArrowIcon"></div></a></li>
+                            <li><a href="">Speaches<div class="d-inline-block darkArrowIcon"></div></a></li>
+                            <li><a href="">CEO<div class="d-inline-block darkArrowIcon"></div></a></li>
+                            <li><a href="">Facts about Microsoft<div class="d-inline-block darkArrowIcon"></div></a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">Investor Relations<div class="d-inline-block darkArrowIcon"></div></a></li>
+                            <li><a href="">Microsoft by the numbers<div class="d-inline-block darkArrowIcon"></div></a></li>
+                            <li><a href="">Press contacts<div class="d-inline-block darkArrowIcon"></div></a></li>
+                            <li><a href="">Press releases<div class="d-inline-block darkArrowIcon"></div></a></li>
+                            <li><a href="">Video & b-roll<div class="d-inline-block darkArrowIcon"></div></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="underPrevToolsContainer">
+                    <div class="insideContainer">
+                        <div class="blackDiv">
+                            <p>Latest news</p>
+                        </div>
+
+                        <a href="">Team Xbox celebrates Earth Day with sustainability tips for gamers, fun ways to donate and more<div class="d-inline-block darkArrowIcon"></div></a>
+                        <a href="">New updates to the Ethical Shopping hub on Microsoft Bing include eco-friendly, upcycled, fair-trade fashion categories<div class="d-inline-block darkArrowIcon"></div></a>
+                        <a href="">How Microsoft measures datacenter water and energy use to improve Azure Cloud sustainability<div class="d-inline-block darkArrowIcon"></div></a>
+                        <a href="">Microsoft at April 23-27 NAB: Showcasing the future of media and entertainment<div class="d-inline-block darkArrowIcon"></div></a>
+                        <a class="viewMoreLink" href="">VIEW MORE</a>
+                    </div>
+                    
+                    <div class="insideContainer">
+                        <div class="blackDiv">
+                            <p>From the CEO</p>
+                        </div>
+                        <img src="https://news.microsoft.com/wp-content/uploads/prod/2020/08/gray2.jpg" alt="">
+                        <div class="insideContainerOnImgDiv">
+                            <a href="">Addressing racial injustice<div class="d-inline-block darkArrowIcon"></div></a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="insideContainer">
+                        <div class="blackDiv">
+                            <p>Stories</p>
+                        </div>
+                        <img src="https://news.microsoft.com/wp-content/uploads/prod/2021/12/Taylor-sisters-reading-sidebar.jpg" alt="">
+                        <div class="insideContainerOnImgDiv">
+
+                            <a href="">New technology and the people it empowers<div class="d-inline-block darkArrowIcon"></div></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+   
+    <div class="socilaMediasContainer">
+        <div class="socilaMediasContainerDiv">
+            
+            <ul class="socialMediasList">
+                <li class="socialMediasListItem">
+                    <p style="font-size: 15px; font-weight: 400;">Follow Us</p>
+                </li>
+                <li class="socialMediasListItem">
+                    <a href="https://www.facebook.com/Microsoft">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="socialMediasListItem"><a href="https://twitter.com/microsoft">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                 </li>
+                 <li class="socialMediasListItem"><a href="https://www.instagram.com/microsoft">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+              
+            </ul>
+
+            <ul class="socialMediasList">
+                <li class="socialMediasListItem">
+                    <p style="font-size: 15px; font-weight: 400; width: 103px;">Share this page</p>
+                </li>
+                <li class="socialMediasListItem"><a href="https://www.facebook.com/Microsoft">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a
+                ></li>
+                <li class="socialMediasListItem"><a href="https://twitter.com/microsoft">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                 </li>
+
+                <li class="socialMediasListItem"><a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGzlfdoOfIIMwAAAYBMMLRwk_lnMkaZdkfwgSpFcet-z_E26gNfCNkQ7IQnk04cbXbwX-vXto9lZSYk0pPGyDYVgr2FZ9r1uTXTXkgk17OIt_IQGcFiUMw-nhcHI4dcrqOxPlU=&originalReferer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fmicrosoft">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+
+    <footer>
+        <div class="footerGrid">
+    
+    
+            <div class="row">
+                <ul class="col-lg-2 col-md-4 col-sm-4">
+                    <li><a href=""><h4>What's new</h4></a></li>
+                    <li><a href="">Surface Pro 8</a></li>
+                    <li><a href="">Surface Laptop Studio</a></li>
+                    <li><a href="">Surface Pro X</a></li>
+                    <li><a href="">Surface Go 3</a></li>
+                    <li><a href="">Surface Duo 2</a></li>
+                    <li><a href="">Surface Pro 7+</a></li>
+                    <li><a href="">Windows 11 apps</a></li>
+                    <li><a href="">HoloLens 2</a></li>
+                </ul>
+                <ul class="col-lg-2 col-md-4 col-sm-4">
+                    <li><a href=""><h4>Microsoft Store</h4></a></li>
+                    <li><a href="">Account profile</a></li>
+                    <li><a href="">Download Center</a></li>
+                    <li><a href="">Microsoft Store</a></li>
+                    <li><a href="">Returns</a></li>
+                    <li><a href="">Order tracking</a></li>
+                    <li><a href="">Virtual workshops</a></li>
+                    <li><a href="">Microsoft Store Promise</a></li>
+                    <li><a href="">Flexible Payments</a></li>
+                </ul>
+                <ul class="col-lg-2 col-md-4 col-sm-4">
+                    <li><a href=""><h4>Education</h4></a></li>
+                    <li><a href="">Microsoft in education</a></li>
+                    <li><a href="">Devices for education</a></li>
+                    <li><a href="">Microsoft Teams for Education</a></li>
+                    <li><a href="">Microsoft 365 Education</a></li>
+                    <li><a href="">Education consultation appointment</a></li>
+                    <li><a href="">Educator training and development</a></li>
+                    <li><a href="">Deals for students and parents</a></li>
+                    <li><a href="">Azure for students</a></li>
+                </ul>
+                <ul class="col-lg-2 col-md-4 col-sm-4">
+                    <li><a href=""><h4>Business</h4></a></li>
+                    <li><a href="">Microsoft Cloud</a></li>
+                    <li><a href="">Microsoft Security</a></li>
+                    <li><a href="">Azure</a></li>
+                    <li><a href="">Dynamics 365</a></li>
+                    <li><a href="">Microsoft 365</a></li>
+                    <li><a href="">Microsoft Advertising</a></li>
+                    <li><a href="">Microsoft Industry</a></li>
+                    <li><a href="">Microsoft Teams</a></li>
+                </ul>
+                <ul class="col-lg-2 col-md-4 col-sm-4">
+                    <li><a href=""><h4>Developer & IT</h4></a></li>
+                    <li><a href="">Developer Center</a></li>
+                    <li><a href="">Documentation</a></li>
+                    <li><a href="">Microsoft Learn</a></li>
+                    <li><a href="">Microsoft Tech Community</a></li>
+                    <li><a href="">Azure Marketplace</a></li>
+                    <li><a href="">AppSource</a></li>
+                    <li><a href="">Microsoft Power Platform</a></li>
+                    <li><a href="">Visual Studio</a></li>
+                </ul>
+                <ul class="col-lg-2 col-md-4 col-sm-4">
+                    <li><a href=""><h4>Company</h4></a></li>
+                    <li><a href="./careers.html">Careers</a></li>
+                    <li><a href="./aboutUs.html">About Microsoft</a></li>
+                    <li><a href="#">Company news</a></li>
+                    <li><a href="">Privacy at Microsoft</a></li>
+                    <li><a href="">Investors</a></li>
+                    <li><a href="./diversity.html">Diversity and inclusion</a></li>
+                    <li><a href="">Accessibility</a></li>
+                    <li><a href="">Sustainability</a></li>
+                </ul>
+        
+        
+                <div class="col-12 lastContainer">
+                    <p style="font-size: 12px; color: grey;">This site is hosted for Microsoft by Phenom People</p>
+                    <ul class="footerLastList">
+                                
+                        <li><a href="">Sitemap</a></li>
+                        <li><a href="">Contact Microsoft</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Terms of use</a></li>
+                        <li><a href="">Trademarks</a></li>
+                        <li><a href="">Safety & eco</a></li>
+                        <li><a href="">About our ads</a></li>
+                        <li><a href="">© Microsoft 2022</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    
+       
+    </footer>
+    
+    
+
+    
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> --> 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> 
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> 
+   <script src="./script/newsScript.js"></script>
+</body>
+</html>
